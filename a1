@@ -1,0 +1,42 @@
+using System;
+
+
+namespace Algorithms_and_Complexity_assignment_1
+{
+    class ReadFromFile
+    {
+        static void Main()
+        {
+            string[] road_1 = System.IO.File.ReadAllLines
+            (@"C:\Users\Ronan\Documents\Algorithms data/Road_1_256.txt");
+            Array.Sort(road_1);
+            System.Console.WriteLine("Every tenth value of the road 1 set of data =:");
+            foreach (string road_1_line in road_1)
+            {
+                Console.WriteLine("\t" + road_1_line);
+            }
+
+            string[] road_2 = System.IO.File.ReadAllLines
+            (@"C:\Users\Ronan\Documents\Algorithms data/Road_2_256.txt");
+
+            System.Console.WriteLine("Every tenth value of the road 2 set of data =:");
+            foreach (string road_2_line in road_2)
+            {
+                Console.WriteLine("\t" + road_2_line);
+            }
+
+            string[] road_3 = System.IO.File.ReadAllLines
+            (@"C:\Users\Ronan\Documents\Algorithms data/Road_3_256.txt");
+
+            System.Console.WriteLine("Every tenth value of the road 3 set of data =:");
+            foreach (string road_3_line in road_3)
+            {
+                Console.WriteLine("\t" + road_3_line);
+            }
+
+
+            Console.WriteLine("Press any key to exit.");
+            System.Console.ReadKey();
+        }
+    }
+}
